@@ -80,7 +80,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
         document.getElementById('latter-error').style.display = 'block';
     }
 
-    if(totalbalanceText > expensedText){
+    if(totalbalanceText < savebalanceText){
         document.getElementById('save-error').style.display = 'block';
     }
 })
