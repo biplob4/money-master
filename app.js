@@ -59,11 +59,11 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const totalbalance = document.getElementById("total-balance");
     const totalbalanceText = parseFloat(totalbalance.innerText);
 
-    const savebalance = document.getElementById("saving-balance");
-    const savebalanceText = parseFloat(totalbalance.innerText);
+    let savebalance = document.getElementById("saving-balance");
+    const savebalanceText = parseFloat(savebalance.innerText);
 
     const remainingbalance = document.getElementById("remaining-balance");
-    const remainingbalanceText = parseFloat(totalbalance.innerText);
+    const remainingbalanceText = parseFloat(remainingbalance.innerText);
 
     const incomeAmount = allInputValue("income");
     const saveAmount = allInputValue("save");
@@ -80,7 +80,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
         document.getElementById('latter-error').style.display = 'block';
     }
 
-    if(totalbalanceText < savebalanceText){
+    if(totalbalanceText <= savebalanceText){
         document.getElementById('save-error').style.display = 'block';
     }
 })
