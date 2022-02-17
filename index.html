@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Accounting</title>
+    <!-- style-link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Money-accounting -->
+    <section id="money-accounting">
+        <h1 class="mony-header"> money accounting </h1>
+        <div class="mony-menu">
+            <div class="mony-img">
+                <img src="images/photo-1603777953662-5310c93eeb1c.jfif" alt="">
+            </div>
+
+            <div class="mony-calculate">
+                <h2 id="income-text">Income</h2>
+                <div class="">
+                    <label for="income">Income:</label>
+                    <input class="calculate-input" type="text" name="" id="income-allInput" value=10000>
+                    <h4 class="error" id="income-error">❎Please type <strong>INCOME</strong> amount number...and more than (0) number</h4>
+                </div>
+
+                <h2 id="income-text">Expenses</h2>
+                <div class="">
+                    <label for="income">Food:</label>
+                    <input class="calculate-input" type="text" name="" id="food-allInput" value=3000>
+                    <h4 class="error" id="food-error">❎Please type <strong>FOOD</strong> amount number...and more than (0) number</h4>
+                </div>
+
+                <div class="">
+                    <label for="income">Rent:</label>
+                    <input class="calculate-input" type="text" name="" id="rant-allInput" value=2000>
+                    <h4 class="error" id="rant-error">❎Please type <strong>RANT</strong> amount number...and more than (0) number</h4>
+                </div>
+
+                <div class="">
+                    <label for="income">Clothes:</label>
+                    <input class="calculate-input" type="text" name="" id="clothes-allInput" value=2000>
+                    <h4 class="error" id="clothes-error">❎Please type <strong>Clothes</strong> amount number...and more than (0) number</h4>
+                </div>
+
+                <button class="calculate" id="calculate-btn">Calculate</button>
+                <h1 class="balance">Total Expenses: <span id="expensed-balance">5500</span> </h1>
+                <h4 class="error" id="e-error">❎Please type<strong>Expenses</strong> amount number...and more than (0) number</h4>
+                <h1 class="balance"> Balance: <span id="total-balance">4500</span> </h1>
+
+                <div class="">
+                    <h3 class="save-text">Save:</h3>
+                    <input class="save-input" type="text" name="" id="save-allInput" value=20>
+                    <span class="persent">%</span>
+                    <button class="calculate" id="save-btn">Save</button>
+                    <h4 class="error" id="save-error">❎Please type<strong>SAVE</strong> amount number...and more than (0) number</h4>
+                    <h1 class="balance">Saving allInputValue: <span id="saving-balance">2000</span> </h1>
+                    <h1 class="balance"> Remaining Balance: <span id="remaining-balance">2500</span> </h1>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- costome-js-link -->
+    <script src="app.js"></script>
+</body>
+
+</html>
