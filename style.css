@@ -153,4 +153,7 @@ strong{
     font-size: 18px;
     font-weight: bolder;
     padding: 0px 4px;
+    background: rgb(90, 87, 87);
+    border-radius: 5px;
+    margin: 0px 5px;
 }
